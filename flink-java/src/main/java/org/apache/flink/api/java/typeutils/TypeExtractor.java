@@ -728,7 +728,7 @@ public class TypeExtractor {
 				}
 			}
 			// check for tuple
-			else if (typeInfo.isTupleType()) {
+			else if (typeInfo.isTupleType() && false) {
 				// check if tuple at all
 				if (!(isClassType(type) && Tuple.class.isAssignableFrom(typeToClass(type)))) {
 					throw new InvalidTypesException("Tuple type expected.");
