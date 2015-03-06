@@ -234,8 +234,7 @@ under the License.
 			<id>scala-2.10</id>
 			<activation>
 				<property>
-					<!-- this is the default scala profile -->
-					<name>!scala-2.11</name>
+					<name>scala-2.10</name>
 				</property>
 			</activation>
 			<dependencies>

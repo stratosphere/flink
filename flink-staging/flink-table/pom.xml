@@ -74,7 +74,7 @@ under the License.
         </dependency>
 
         <dependency>
-            <groupId>org.apache.flink</groupId>
+            <groupId>eu.stratosphere</groupId>
             <artifactId>flink-test-utils</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
@@ -236,7 +236,7 @@ under the License.
             <activation>
                 <property>
                     <!-- this is the default scala profile -->
-                    <name>!scala-2.11</name>
+                    <name>scala-2.10</name>
                 </property>
             </activation>
             <dependencies>
