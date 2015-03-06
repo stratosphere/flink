@@ -102,7 +102,7 @@ public final class BlobLibraryCacheManager extends TimerTask implements LibraryC
 			if (entry == null) {
 				// create a new entry in the library cache
 				BlobKey[] keys = requiredJarFiles.toArray(new BlobKey[requiredJarFiles.size()]);
-				URL[] urls = new URL[keys.length];
+				URL[] urls = new URL[keys.length+1];
 
 				int count = 0;
 				try {
@@ -110,6 +110,7 @@ public final class BlobLibraryCacheManager extends TimerTask implements LibraryC
 						BlobKey blobKey = keys[count];
 						urls[count] = registerReferenceToBlobKeyAndGetURL(blobKey);
 					}
+					urls[keys.length] = new URL("file:/tmp/emma/codegen/");
 				}
 				catch (Throwable t) {
 					// undo the reference count increases
