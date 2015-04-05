@@ -18,26 +18,26 @@ specific language governing permissions and limitations
 under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-staging</artifactId>
-		<version>0.9-SNAPSHOT</version>
-		<relativePath>..</relativePath>
-	</parent>
+    <parent>
+        <groupId>eu.stratosphere</groupId>
+        <artifactId>flink-staging</artifactId>
+        <version>0.9-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
 
-	<artifactId>flink-streaming-parent</artifactId>
-	<name>flink-streaming</name>
-	<packaging>pom</packaging>
+    <artifactId>flink-streaming-parent</artifactId>
+    <name>flink-streaming</name>
+    <packaging>pom</packaging>
 
-	<modules>
-		<module>flink-streaming-core</module>
-		<module>flink-streaming-scala</module>
-		<module>flink-streaming-examples</module>
-		<module>flink-streaming-connectors</module>
-	</modules>
-	
+    <modules>
+        <module>flink-streaming-core</module>
+        <module>flink-streaming-scala</module>
+        <module>flink-streaming-examples</module>
+        <module>flink-streaming-connectors</module>
+    </modules>
+
 </project>
