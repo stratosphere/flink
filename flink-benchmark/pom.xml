@@ -25,12 +25,12 @@ under the License.
 
   <parent>
     <groupId>org.apache.flink</groupId>
-    <artifactId>flink-parent</artifactId>
+    <artifactId>flink-parent_2.11</artifactId>
     <version>0.10.0</version>
     <relativePath>..</relativePath>
   </parent>
 
-  <artifactId>flink-benchmark</artifactId>
+  <artifactId>flink-benchmark_2.11</artifactId>
   <name>flink-benchmark</name>
   <packaging>jar</packaging>
 
@@ -43,7 +43,7 @@ under the License.
   <dependencies>
     <dependency>
       <groupId>org.apache.flink</groupId>
-      <artifactId>flink-clients</artifactId>
+      <artifactId>flink-clients_2.11</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

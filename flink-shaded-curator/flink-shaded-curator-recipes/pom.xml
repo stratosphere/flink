@@ -24,12 +24,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-shaded-curator</artifactId>
+		<artifactId>flink-shaded-curator_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-shaded-curator-recipes</artifactId>
+	<artifactId>flink-shaded-curator-recipes_2.11</artifactId>
 	<name>flink-shaded-curator-recipes</name>
 
 	<packaging>jar</packaging>

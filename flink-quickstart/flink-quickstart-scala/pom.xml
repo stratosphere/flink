@@ -26,12 +26,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-quickstart</artifactId>
+		<artifactId>flink-quickstart_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-quickstart-scala</artifactId>
+	<artifactId>flink-quickstart-scala_2.11</artifactId>
 	<packaging>maven-archetype</packaging>
 
 </project>
