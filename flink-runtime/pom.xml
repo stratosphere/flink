@@ -24,12 +24,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-parent</artifactId>
+		<artifactId>flink-parent_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-runtime</artifactId>
+	<artifactId>flink-runtime_2.11</artifactId>
 	<name>flink-runtime</name>
 
 	<packaging>jar</packaging>
@@ -41,13 +41,13 @@ under the License.
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-core</artifactId>
+			<artifactId>flink-core_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-core</artifactId>
+			<artifactId>flink-core_2.11</artifactId>
 			<version>${project.version}</version>
 			<type>test-jar</type>
 			<scope>test</scope>
@@ -55,7 +55,7 @@ under the License.
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-java</artifactId>
+			<artifactId>flink-java_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		
@@ -182,7 +182,7 @@ under the License.
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-shaded-curator-recipes</artifactId>
+			<artifactId>flink-shaded-curator-recipes_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		
@@ -417,7 +417,7 @@ under the License.
 						<configuration>
 							<artifactSet>
 								<includes combine.children="append">
-									<include>org.apache.flink:flink-shaded-curator-recipes</include>
+									<include>org.apache.flink:flink-shaded-curator-recipes_2.11</include>
 								</includes>
 							</artifactSet>
 							<relocations combine.children="append">

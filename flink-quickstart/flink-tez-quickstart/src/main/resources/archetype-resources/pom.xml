@@ -47,21 +47,21 @@ under the License.
     </repositories>
 
     <!-- These two requirements are the minimum to use and develop Flink.
-        You can add others like <artifactId>flink-scala</artifactId> for Scala! -->
+        You can add others like <artifactId>flink-scala_2.11</artifactId> for Scala! -->
     <dependencies>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-java</artifactId>
+            <artifactId>flink-java_2.11</artifactId>
             <version>0.10.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-clients</artifactId>
+            <artifactId>flink-clients_2.11</artifactId>
             <version>0.10.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-tez</artifactId>
+            <artifactId>flink-tez_2.11</artifactId>
             <version>0.10.0</version>
         </dependency>
     </dependencies>

@@ -25,12 +25,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-parent</artifactId>
+		<artifactId>flink-parent_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-streaming-connectors-parent</artifactId>
+	<artifactId>flink-streaming-connectors-parent_2.11</artifactId>
 	<name>flink-streaming-connectors</name>
 
 	<packaging>pom</packaging>

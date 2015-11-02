@@ -23,12 +23,12 @@
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-shaded-curator</artifactId>
+		<artifactId>flink-shaded-curator_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-shaded-curator-test</artifactId>
+	<artifactId>flink-shaded-curator-test_2.11</artifactId>
 	<name>flink-shaded-curator-test</name>
 
 	<packaging>jar</packaging>
