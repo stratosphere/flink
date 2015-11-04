@@ -24,12 +24,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-shaded-hadoop</artifactId>
+		<artifactId>flink-shaded-hadoop_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-shaded-include-yarn-tests</artifactId>
+	<artifactId>flink-shaded-include-yarn-tests_2.11</artifactId>
 	<name>flink-shaded-include-yarn-tests</name>
 
 	<packaging>jar</packaging>

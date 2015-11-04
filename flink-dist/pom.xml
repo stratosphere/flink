@@ -24,12 +24,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-parent</artifactId>
+		<artifactId>flink-parent_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-dist</artifactId>
+	<artifactId>flink-dist_2.11</artifactId>
 	<name>flink-dist</name>
 	<packaging>jar</packaging>
 
@@ -37,91 +37,91 @@ under the License.
 		<!-- BINARIES -->
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-core</artifactId>
+			<artifactId>flink-core_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-java</artifactId>
+			<artifactId>flink-java_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-scala</artifactId>
+			<artifactId>flink-scala_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-runtime</artifactId>
+			<artifactId>flink-runtime_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-runtime-web</artifactId>
+			<artifactId>flink-runtime-web_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-optimizer</artifactId>
+			<artifactId>flink-optimizer_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-clients</artifactId>
+			<artifactId>flink-clients_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-avro</artifactId>
+			<artifactId>flink-avro_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-java-examples</artifactId>
+			<artifactId>flink-java-examples_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-scala-examples</artifactId>
+			<artifactId>flink-scala-examples_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-streaming-java</artifactId>
+			<artifactId>flink-streaming-java_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-streaming-scala</artifactId>
+			<artifactId>flink-streaming-scala_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-language-binding-generic</artifactId>
+			<artifactId>flink-language-binding-generic_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-python</artifactId>
+			<artifactId>flink-python_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-scala-shell</artifactId>
+			<artifactId>flink-scala-shell_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
@@ -140,7 +140,7 @@ under the License.
 			<dependencies>
 				<dependency>
 					<groupId>org.apache.flink</groupId>
-					<artifactId>flink-yarn</artifactId>
+					<artifactId>flink-yarn_2.11</artifactId>
 					<version>${project.version}</version>
 				</dependency>
 			</dependencies>

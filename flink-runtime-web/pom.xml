@@ -24,12 +24,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-parent</artifactId>
+		<artifactId>flink-parent_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-runtime-web</artifactId>
+	<artifactId>flink-runtime-web_2.11</artifactId>
 	<name>flink-runtime-web</name>
 
 	<packaging>jar</packaging>
@@ -54,7 +54,7 @@ under the License.
 		
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-runtime</artifactId>
+			<artifactId>flink-runtime_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
@@ -109,7 +109,7 @@ under the License.
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-core</artifactId>
+			<artifactId>flink-core_2.11</artifactId>
 			<version>${project.version}</version>
 			<type>test-jar</type>
 			<scope>test</scope>
@@ -117,7 +117,7 @@ under the License.
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-runtime</artifactId>
+			<artifactId>flink-runtime_2.11</artifactId>
 			<version>${project.version}</version>
 			<type>test-jar</type>
 			<scope>test</scope>

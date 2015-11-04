@@ -23,19 +23,19 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-examples</artifactId>
+		<artifactId>flink-examples_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-java-examples</artifactId>
+	<artifactId>flink-java-examples_2.11</artifactId>
 	<name>flink-java-examples</name>
 	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-java</artifactId>
+			<artifactId>flink-java_2.11</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
@@ -309,16 +309,16 @@ under the License.
 						</goals>
 						<configuration> 
 							<target>
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-KMeans.jar" tofile="${project.basedir}/target/KMeans.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-ConnectedComponents.jar" tofile="${project.basedir}/target/ConnectedComponents.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-EnumTrianglesBasic.jar" tofile="${project.basedir}/target/EnumTrianglesBasic.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-EnumTrianglesOpt.jar" tofile="${project.basedir}/target/EnumTrianglesOpt.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-PageRankBasic.jar" tofile="${project.basedir}/target/PageRankBasic.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-TransitiveClosure.jar" tofile="${project.basedir}/target/TransitiveClosure.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-WebLogAnalysis.jar" tofile="${project.basedir}/target/WebLogAnalysis.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-WordCount.jar" tofile="${project.basedir}/target/WordCount.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-WordCountPOJO.jar" tofile="${project.basedir}/target/WordCountPOJO.jar" />
-								<copy file="${project.basedir}/target/flink-java-examples-${project.version}-DistCp.jar" tofile="${project.basedir}/target/DistCp.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-KMeans.jar" tofile="${project.basedir}/target/KMeans.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-ConnectedComponents.jar" tofile="${project.basedir}/target/ConnectedComponents.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-EnumTrianglesBasic.jar" tofile="${project.basedir}/target/EnumTrianglesBasic.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-EnumTrianglesOpt.jar" tofile="${project.basedir}/target/EnumTrianglesOpt.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-PageRankBasic.jar" tofile="${project.basedir}/target/PageRankBasic.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-TransitiveClosure.jar" tofile="${project.basedir}/target/TransitiveClosure.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-WebLogAnalysis.jar" tofile="${project.basedir}/target/WebLogAnalysis.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-WordCount.jar" tofile="${project.basedir}/target/WordCount.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-WordCountPOJO.jar" tofile="${project.basedir}/target/WordCountPOJO.jar" />
+								<copy file="${project.basedir}/target/flink-java-examples_2.11-${project.version}-DistCp.jar" tofile="${project.basedir}/target/DistCp.jar" />
 							</target>
 						</configuration>
 					</execution>

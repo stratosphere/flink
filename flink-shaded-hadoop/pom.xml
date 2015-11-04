@@ -24,12 +24,12 @@ under the License.
 
 	<parent>
 		<groupId>org.apache.flink</groupId>
-		<artifactId>flink-parent</artifactId>
+		<artifactId>flink-parent_2.11</artifactId>
 		<version>0.10.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>flink-shaded-hadoop</artifactId>
+	<artifactId>flink-shaded-hadoop_2.11</artifactId>
 	<name>flink-shaded-hadoop</name>
 
 	<packaging>pom</packaging>
