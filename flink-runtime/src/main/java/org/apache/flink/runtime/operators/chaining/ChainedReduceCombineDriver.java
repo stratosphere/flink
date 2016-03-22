@@ -75,6 +75,8 @@ public class ChainedReduceCombineDriver<T> extends ChainedDriver<T, T> {
 
 	private volatile boolean canceled;
 
+	private long numEmissions, numEmittedRecords;
+
 	// ------------------------------------------------------------------------
 
 	@Override
@@ -129,6 +131,9 @@ public class ChainedReduceCombineDriver<T> extends ChainedDriver<T, T> {
 				table.open();
 				break;
 		}
+
+		numEmissions = 0;
+		numEmittedRecords = 0;
 	}
 
 	@Override
@@ -175,6 +180,9 @@ public class ChainedReduceCombineDriver<T> extends ChainedDriver<T, T> {
 	}
 
 	private void sortAndCombine() throws Exception {
+
+		numEmissions++;
+
 		final InMemorySorter<T> sorter = this.sorter;
 
 		if (!sorter.isEmpty()) {
@@ -221,6 +229,7 @@ public class ChainedReduceCombineDriver<T> extends ChainedDriver<T, T> {
 					}
 
 					output.collect(value);
+					numEmittedRecords++;
 
 					// swap the value from the new key group into the first object
 					T tmp = reuse1;
@@ -249,6 +258,7 @@ public class ChainedReduceCombineDriver<T> extends ChainedDriver<T, T> {
 					}
 
 					output.collect(res);
+					numEmittedRecords++;
 				}
 			}
 		}
@@ -257,13 +267,23 @@ public class ChainedReduceCombineDriver<T> extends ChainedDriver<T, T> {
 	@Override
 	public void close() {
 		// send the final batch
+		int taskIx = this.parent.getIndexInSubtaskGroup();
+		int taskNo = this.parent.getCurrentNumberOfSubtasks();
 		try {
 			switch (strategy) {
 				case SORTED_PARTIAL_REDUCE:
 					sortAndCombine();
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") combiner capacity: " + this.sorter.getCapacity());
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") combiner occupancy: " + this.sorter.getOccupancy());
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") numEmissions: " + numEmissions);
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") numEmittedRecords: " + numEmittedRecords);
 					break;
 				case HASHED_PARTIAL_REDUCE:
 					table.emit();
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") combiner capacity: " + this.table.getCapacity());
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") combiner occupancy: " + this.table.getOccupancy());
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") numEmissions: " + table.numEmissions);
+					LOG.info(taskName + " (" + taskIx + "/" + taskNo + ") numEmittedRecords: " + table.numEmittedRecords);
 					break;
 			}
 		} catch (Exception ex2) {
